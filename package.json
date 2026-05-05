@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^8.2.0",
-    "@iconify-json/tabler": "^1.2.33",
     "daisyui": "^5.5.19",
     "eslint": "^10.2.0",
     "eslint-plugin-format": "^2.0.1",
