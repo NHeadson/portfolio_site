@@ -1,6 +1,72 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes:
-    light --default,
-    dark --prefersdark;
+  themes: dracula, NeutralLight;
+}
+
+@plugin "daisyui/theme" {
+  name: "NeutralLight";
+  color-scheme: "light";
+  --color-base-100: oklch(98% 0.005 102.212);
+  --color-base-200: oklch(97% 0.016 103.193);
+  --color-base-300: oklch(92% 0.078 95.746);
+  --color-base-content: oklch(0% 0.111 232);
+  --color-primary: oklch(70% 0.015 286.067);
+  --color-primary-content: oklch(21% 0.006 285.885);
+  --color-secondary: oklch(14% 0.005 285.823);
+  --color-secondary-content: oklch(98% 0 0);
+  --color-accent: oklch(70.1% 0.359 83.2);
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: oklch(43% 0 0);
+  --color-neutral-content: oklch(98% 0.018 155.826);
+  --color-info: oklch(58% 0.158 241.966);
+  --color-info-content: oklch(91% 0.08 205.041);
+  --color-success: oklch(79% 0.209 151.711);
+  --color-success-content: oklch(26% 0.065 152.934);
+  --color-warning: oklch(85% 0.199 91.936);
+  --color-warning-content: oklch(28% 0.066 53.813);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(25% 0.092 26.042);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 1;
+  font-family: "Instrument Serif", serif;
+}
+
+@plugin "daisyui/theme" {
+  name: "dracula";
+  color-scheme: "dark";
+  --color-base-100: oklch(28.822% 0.022 277.508);
+  --color-base-200: oklch(26.805% 0.02 277.508);
+  --color-base-300: oklch(24.787% 0.019 277.508);
+  --color-base-content: oklch(97.747% 0.007 106.545);
+  --color-primary: oklch(28.6% 0.125 230.3);
+  --color-primary-content: oklch(97% 0.014 254.604);
+  --color-secondary: oklch(83% 0.145 321.434);
+  --color-secondary-content: oklch(12% 0.042 264.695);
+  --color-accent: oklch(83.392% 0.124 66.558);
+  --color-accent-content: oklch(16.678% 0.024 66.558);
+  --color-neutral: oklch(39.445% 0.032 275.524);
+  --color-neutral-content: oklch(87.889% 0.006 275.524);
+  --color-info: oklch(88.263% 0.093 212.846);
+  --color-info-content: oklch(17.652% 0.018 212.846);
+  --color-success: oklch(87.099% 0.219 148.024);
+  --color-success-content: oklch(17.419% 0.043 148.024);
+  --color-warning: oklch(95.533% 0.134 112.757);
+  --color-warning-content: oklch(19.106% 0.026 112.757);
+  --color-error: oklch(68.22% 0.206 24.43);
+  --color-error-content: oklch(13.644% 0.041 24.43);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+  font-family: "Instrument Serif", serif;
 }
