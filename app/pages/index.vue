@@ -3,22 +3,22 @@
 </script>
 
 <template>
-  <div class="hero container mx-auto mt-25">
-    <div class="hero-content">
-      <figure class="max-w-sm">
+  <div class="hero container mx-auto mt-25 p-3">
+    <div class="hero-content p-5">
+      <figure class="max-w-sm p-5">
         <img src="/images/Headshot.jpg" alt="Profile Picture" class="rounded-full shadow-lg">
       </figure>
-      <div class="max-w-3xl text-right">
-        <h1 class="text-7xl font-bold text-center">
+      <div class="hero-copy max-w-3xl text-right">
+        <h1 class="text-7xl font-bold text-left p-5">
           Nick Headson
         </h1>
-        <p class="p-6 text-start text-lg opacity-75">
-          Highly motivated and detail-oriented software developer with a passion for creating efficient and scalable
-          applications. Experienced in full-stack development, with a strong background in JavaScript, TypeScript, and
-          modern web technologies. Eager to contribute to innovative projects and continuously learn new skills in the
+        <p class="text-start text-xl opacity-75 p-5">
+          Hello! I am a highly motivated and detail-oriented software developer with a love for creative designs in efficient and scalable
+          applications. From my time in school, I gained experience in full-stack development, with a strong background in JavaScript, TypeScript, and
+          modern web technologies. I am someone who is extremely eager to contribute to innovative projects and continuously learn new skills in the
           consistently-evolving development industry.
         </p>
-        <button class="btn btn-accent mt-5">
+        <button class="btn btn-accent p-5">
           View My Work
           <Icon name="tabler:arrow-right" size="24" />
         </button>
@@ -28,5 +28,27 @@
 </template>
 
 <style scoped>
+.hero-copy {
+  border: 1px solid rgb(255 255 255 / 0.22);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 0.1);
+  backdrop-filter: blur(8px) saturate(115%);
+  box-shadow: 0 12px 30px rgb(0 0 0 / 0.12);
+  padding: 1.85rem;
+}
 
+:root[data-theme="dracula"] .hero-copy {
+  border-color: rgb(255 255 255 / 0.14);
+  background: rgb(15 15 23 / 0.26);
+  backdrop-filter: blur(8px) saturate(115%);
+  box-shadow: 0 12px 30px rgb(0 0 0 / 0.18);
+}
+
+.hero-copy h1 {
+  text-shadow: 0 1px 8px rgb(0 0 0 / 0.14);
+}
+
+.hero-copy p {
+  color: inherit;
+}
 </style>
