@@ -1,4 +1,18 @@
 <script lang="ts" setup>
+useHead({
+  link: [
+    {
+      rel: "preload",
+      as: "image",
+      href: "/images/bg-light.jpg",
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: "/images/bg.jpg",
+    },
+  ],
+});
 </script>
 
 <template>

@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-
-</script>
-
 <template>
   <div class="navbar bg-primary text-primary-content">
     <div class="navbar-start">
