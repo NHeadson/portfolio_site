@@ -54,4 +54,15 @@
 .hero-copy p {
   color: inherit;
 }
+
+.btn {
+  transition:
+    transform 220ms ease,
+    filter 220ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1);
+}
 </style>

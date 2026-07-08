@@ -36,10 +36,16 @@
     filter 220ms ease;
 }
 
+.brand-link:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-content);
+  border-color: var(--color-secondary);
+}
+
 .brand-link:hover,
 .cta-link:hover {
   transform: translateY(-1px);
-  filter: brightness(1.04);
+  filter: brightness(1);
 }
 
 .cta-link {
