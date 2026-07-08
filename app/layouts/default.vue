@@ -7,8 +7,7 @@ useHead({
       href: "/images/bg-light.jpg",
     },
     {
-      rel: "preload",
-      as: "image",
+      rel: "prefetch",
       href: "/images/bg.jpg",
     },
   ],

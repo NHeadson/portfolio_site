@@ -21,6 +21,9 @@ export default defineNuxtConfig({
     },
   },
   vite: {
+    build: {
+      sourcemap: false,
+    },
     plugins: [
       tailwindcss(),
     ],
