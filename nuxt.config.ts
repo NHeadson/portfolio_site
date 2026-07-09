@@ -14,6 +14,14 @@ export default defineNuxtConfig({
   icon: {
     provider: "iconify",
   },
+  fonts: {
+    families: [
+      {
+        name: "Noto Serif",
+        provider: "google",
+      },
+    ],
+  },
   css: ["../assets/css/main.css"],
   eslint: {
     config: {

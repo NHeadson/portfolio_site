@@ -34,7 +34,6 @@
   --border: 1px;
   --depth: 0;
   --noise: 0;
-  font-family: "Instrument Serif", serif;
 }
 
 @plugin "daisyui/theme" {
@@ -68,5 +67,11 @@
   --border: 1px;
   --depth: 0;
   --noise: 0;
-  font-family: "Instrument Serif", serif;
+}
+
+html,
+body,
+#__nuxt {
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
 }

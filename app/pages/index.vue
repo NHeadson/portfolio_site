@@ -9,7 +9,7 @@
         <img src="/images/Headshot.jpg" alt="Profile Picture" class="rounded-full shadow-lg">
       </figure>
       <div class="hero-copy max-w-3xl text-right p-6 px-10">
-        <h1 class="text-6xl font-bold text-left p-6">
+        <h1 class="text-6xl opacity-75 font-bold text-left p-6">
           Nick Headson
         </h1>
         <hr class="mx-auto">
