@@ -21,10 +21,10 @@
         </p>
         <hr class="mx-auto">
         <div class="pt-6">
-          <button class="btn btn-accent p-6">
+          <NuxtLink to="/projects" class="btn btn-accent p-6">
             View My Work
             <Icon name="tabler:arrow-right" size="24" />
-          </button>
+          </NuxtLink>
         </div>
       </div>
     </div>

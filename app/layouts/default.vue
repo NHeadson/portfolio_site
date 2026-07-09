@@ -1,6 +1,11 @@
 <script lang="ts" setup>
+import { computed } from "vue";
+
 const colorMode = useColorMode();
 const darkTheme = "dracula";
+
+const route = useRoute();
+const isHomePage = computed(() => route.path === "/");
 
 useHead(() => {
   const isDarkTheme = colorMode.value === darkTheme;
@@ -24,7 +29,7 @@ useHead(() => {
 </script>
 
 <template>
-  <div class="bg-wrapper max-h-screen overflow-hidden">
+  <div class="bg-wrapper max-h-screen" :class="{ 'overflow-hidden': isHomePage }">
     <AppNavBar />
     <main>
       <slot />

@@ -7,9 +7,10 @@
     </div>
     <div class="navbar-end">
       <AppThemeToggle />
-      <a class="cta-link btn btn-accent">View My Work
+      <NuxtLink to="/projects" class="cta-link btn btn-accent">
+        View My Work
         <Icon name="tabler:arrow-right" size="24" />
-      </a>
+      </NuxtLink>
     </div>
   </div>
 </template>

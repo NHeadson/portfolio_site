@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       },
     ],
   },
-  css: ["../assets/css/main.css"],
+  css: ["../app/assets/css/main.css"],
   eslint: {
     config: {
       standalone: false,
