@@ -4,12 +4,16 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+  experimental: {
+    appManifest: true,
+  },
   modules: [
     "@nuxt/eslint",
     "@nuxt/icon",
     "@nuxt/fonts",
     "motion-v/nuxt",
     "@nuxtjs/color-mode",
+    "@nuxt/image",
   ],
   icon: {
     provider: "iconify",
@@ -31,6 +35,9 @@ export default defineNuxtConfig({
   vite: {
     build: {
       sourcemap: false,
+      modulePreload: {
+        polyfill: false,
+      },
     },
     plugins: [
       tailwindcss(),
