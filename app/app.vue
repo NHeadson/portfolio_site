@@ -3,8 +3,8 @@ useHead({
   link: [
     {
       rel: "icon",
-      type: "image/png",
-      href: "/images/icon-kev.png",
+      type: "ico",
+      href: "/icon-kev-bg.ico",
     },
   ],
 });

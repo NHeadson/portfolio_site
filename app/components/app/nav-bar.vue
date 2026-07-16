@@ -1,7 +1,11 @@
+<script lang="ts" setup>
+</script>
+
 <template>
   <div class="navbar nav-shell bg-primary/70 text-primary-content">
     <div class="navbar-start">
       <NuxtLink to="/" class="brand-link btn btn-ghost text-xl">
+        <img src="/icon-kev-bg.ico" class="kev-icon" alt="Nick Headson" width="30" height="30">
         Nick Headson
       </NuxtLink>
     </div>
@@ -51,5 +55,9 @@
 
 .cta-link {
   gap: 0.35rem;
+}
+
+.kev-icon {
+  border-radius: 3px;
 }
 </style>
